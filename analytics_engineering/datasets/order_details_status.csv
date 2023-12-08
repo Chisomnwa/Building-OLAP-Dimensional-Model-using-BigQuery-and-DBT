@@ -1,0 +1,7 @@
+id,status
+4,On Order
+3,Shipped
+2,Invoiced
+5,No Stock
+1,Allocated
+0,None
