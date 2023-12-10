@@ -1,4 +1,4 @@
-# Building Dimensional Model using BigQuery and dbt
+# Transforming OLTP to OLAP Dimensional Model using BigQuery and dbt
 This project is about building a dimensional data warehouse in BigQuery by transforming an OLTP system to an OLAP system, using dbt as our data transformation tool.
 
 The OLTP system contains the sales data of Northwind; a specialty food export-import company.
@@ -72,7 +72,6 @@ From the above ERD diagram of the OLTP transactional system, we identify the fol
 <img src="analytics_engineering/readme_images/physical-model.png">
 <br><br>
 
-
 ### Proposed Kimball Data Warehouse Architecture
 Below is the proposed data warehouse architecture, which focuses on how the data flows from the old MySQL OLTP database to the new modernized dimensional data warehouse in BigQuery during the migration.
 
@@ -93,10 +92,10 @@ The above three data layers help to achieve the business requirements of the Nor
 
 
 ### Getting started on dbt project
-- Commands to install dbt and connect to bigquery <a href="https://github.com/priye-1/OLAP_Dimensional_Modeling_for_Advanced_Analytics/blob/master/sql_bash_commands/dbt_bash_setup.sh">here</a>
-- Commands to create tables and insert data <a href="https://github.com/priye-1/OLAP_Dimensional_Modeling_for_Advanced_Analytics/tree/master/sql_bash_commands/bigquery_tables_setup">here</a>
-- Commands to create Dim and Fact tables in different layers can be found <a href="https://github.com/priye-1/OLAP_Dimensional_Modeling_for_Advanced_Analytics/tree/master/models">here</a>
-- If you are not able to enable billing for Bigquery on your account, insert data manually by uploading csv files located <a href="https://github.com/priye-1/OLAP_Dimensional_Modeling_for_Advanced_Analytics/tree/master/datasets">here</a>
+- Commands to install dbt and connect to bigquery <a href="https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/blob/main/analytics_engineering/sql_bash_commands/dbt_bash_setup.sh">here</a>
+- Commands to create tables and insert data <a href="https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/tree/main/analytics_engineering/sql_bash_commands/bigquery_tables_setup">here</a>
+- Commands to create Dim and Fact tables in different layers can be found <a href="https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/tree/main/analytics_engineering/models">here</a>
+- If you are not able to enable billing for Bigquery on your account, insert data manually by uploading csv files located <a href="https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/tree/main/analytics_engineering/datasets">here</a>
 
 
 ### Resources:
@@ -107,5 +106,7 @@ The above three data layers help to achieve the business requirements of the Nor
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
 
 ***
-Click on the [analytics_engineering](https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/tree/main/analytics_engineering) folder to see all the folders and files created during this project. 🌟💡
+Find the Medium article I wrote about this project [here](https://medium.com/@chisomnnamani/transforming-oltp-to-olap-dimensional-model-using-bigquery-and-dbt-bfd087293965) .
 
+***
+And finally, click the [analytics_engineering](https://github.com/Chisomnwa/Building-OLAP-Dimensional-Model-using-BigQuery-and-DBT/tree/main/analytics_engineering) folder to see all the folders and files created during this project. 🌟
