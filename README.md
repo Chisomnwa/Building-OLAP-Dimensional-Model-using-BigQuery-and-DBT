@@ -1,4 +1,4 @@
-# Transforming OLTP to OLAP Dimensional Model using BigQuery and dbt
+# Building OLAP Dimensional Model in BigQuery, using dbt as a Transformation Tool.
 This project is about building a dimensional data warehouse in BigQuery by transforming an OLTP system to an OLAP system, using dbt as our data transformation tool.
 
 The OLTP system contains the sales data of Northwind; a specialty food export-import company.
