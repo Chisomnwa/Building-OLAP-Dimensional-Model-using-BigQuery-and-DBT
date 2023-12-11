@@ -1,4 +1,4 @@
-# Building OLAP Dimensional Model in BigQuery, using dbt as a Transformation Tool.
+# Building OLAP Dimensional Model in BigQuery, using dbt as a Data Transformation Tool.
 This project is about building a dimensional data warehouse in BigQuery by transforming an OLTP system to an OLAP system, using dbt as our data transformation tool.
 
 The OLTP system contains the sales data of Northwind; a specialty food export-import company.
@@ -60,6 +60,8 @@ From the above ERD diagram of the OLTP transactional system, we identify the fol
 
 
 ### Proposed Data Modelling Concepts
+After a series of interviews with the business stakeholders and understanding their business requirements, we proposed the following data modeling concepts:
+
 - <b>Conceptual Data Model</b>
 <img src="analytics_engineering/readme_images/conceptual-model.png">
 <br><br>
@@ -78,11 +80,11 @@ Below is the proposed data warehouse architecture, which focuses on how the data
 <img src="analytics_engineering/readme_images/data-warehouse-architecture.png">
 <br><br>
 
-From the image below you can find the three layers (datasets) created in Bigquery through DBT. They are identified by the "dbt prefix"
+With the insights from the data modeling and the data warehouse architecture design, we go ahead to create the three layers (datasets) in Bigquery using dbt. These (staging, warehouse, and analytics_obt or reporting) layers are identified by the "dbt prefix".
 <br>
 <img src="analytics_engineering/readme_images/bigquery-data-layers.png">
 
-The above three data layers help to achieve the business requirements of the Northwind and Sales Overview, Product Inventory, and Customer Reporting processes can now be carried out effectively to draw out insights.
+The above three data layers help to achieve the business requirements of Northwind and Sales Overview, Product Inventory, and Customer Reporting processes can now be carried out effectively to draw out insights.
 
 
 ### Results
